@@ -37,7 +37,7 @@ window.carousel = function(slides, dotsElem, dots, isDotElem, prevElem, nextElem
       });
       dotsElem.addEventListener('click', function(e) {
         if (isDotElem(e.target)) {
-          currentSlide(e.target.dataset.index + 1);
+          currentSlide(Number(e.target.dataset.index) + 1);
         }
       });
     }
